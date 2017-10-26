@@ -15,13 +15,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
 <!--<script src="js/jquery.easydropdown.js"></script>-->
 <!--start slider -->
 <link rel="stylesheet" href="css/fwslider.css" media="all">
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/fwslider.js"></script>
 <!--end slider -->
+<script >
+	$(function(){
+            new WOW().init();
+        });
+</script>
 <script type="text/javascript">
+		
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
 
@@ -62,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <div class="logo">
 						<a href="index.html"><img src="images/logo.png" alt=""/></a>
 					  </div>
-					  <div class="menu">
+					  <div class="menu wow bounceInLeft"  data-wow-delay="0.5s">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
 						    	<li><a href="#idea">Idea</a></li>
@@ -117,7 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
 	  <div class="main">
 	  	<div class="content-bottom" id="idea">
-			<div class="container">
+			<div class="container wow fadeInDown"  data-wow-delay="0.5s">
 				<div class="row content_bottom-text">
 				  <div class="col-md-7">
 					<h3>cuánto debes andar para llegar a una ciclovía y sentirte segur@?<br></h3>
@@ -209,13 +216,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h3 class="m_3">Propuesta</h3>
 			<div >
 				<center>
-				<iframe width="700" height="500" allowfullscreen src="https://www.youtube.com/embed/7bYzOi3LNUk?controls=1" class="video"></iframe> 
+				<iframe width="750" height="500" allowfullscreen src="https://www.youtube.com/embed/7bYzOi3LNUk?controls=1" class="video"></iframe> 
 				</center>
 			</div>
 		 </div>
 	</div>
 
-	<div class="features" id="staff">
+	<div class="features_orange" id="staff">
 		<div class="contents staff">
       <!-- start of content -->
         <h3 class="m_3">¿Quiénes somos?</h3>
@@ -241,18 +248,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	</div>
 
 	   
-
+	<center>
       <h4>
-        Somos un grupo de estudiantes de Ingeniería Civil en informática de la <a href="www.uach.cl">Universidad Austral de Chile</a>. Comprometidos con la sociedad, buscamos causar un impacto local para el bienestar de la ciudadanía de la ciudad de Valdivia.
+        <br><br>Somos un grupo de estudiantes de Ingeniería Civil en informática de la <a href="www.uach.cl">Universidad Austral de Chile</a>. Comprometidos con la sociedad, buscamos causar un impacto local para el bienestar de la ciudadanía de la ciudad de Valdivia.
       </h4>
+  </center>
       <br/>
     </div>
 	</div>
 
-	<div class="features" id="contacto">
+	<div class="contactobikesense" id="contacto">
 		<div class="container">
 			<h3 class="m_3">Contacto</h3>
-      		<p>bikesensevaldivia@gmail.com</p>
+      		<div align="right">
+      			<form id="contacto">
+	      			Nombre<br>
+	      			<input type="text" name="nombre">
+	      			<br>Correo<br>
+	      			<input type="text" name="mail">
+	      			<br>Mensaje<br>
+	      			<textarea name="mensaje" form="contacto"></textarea> <br>
+	      			<input type="submit" name="enviar" value="Enviar">
+	      		</form>
+      		</div>
 		</div>
 	</div>
 
@@ -260,6 +278,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer">
 			<div class="container">
 				<div class="row">
+					<div class="col-md-6">
+						<ul class="footer_box">
+							<h4>BikeSense Valdivia 2017</h4>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- <div class="row">
 					<div class="col-md-3">
 						<ul class="footer_box">
 							<h4>Products</h4>
@@ -323,8 +350,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
 				            </ul>
 				         </dd>
-	   				  </dl>
-   				</div>
+	   				  </dl> 
+   				</div>-->
 			</div>
 		</div>
 </body>	

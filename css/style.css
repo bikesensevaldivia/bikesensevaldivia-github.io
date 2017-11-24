@@ -510,7 +510,7 @@ li.list_desc h4 a:hover{
 }
 /*--main--*/
 .content-top{
-	background: url(../images/sensor.jpg) no-repeat top center;
+	background: url(../images/sensor_frontal.jpg) no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

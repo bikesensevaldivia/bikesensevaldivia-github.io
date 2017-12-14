@@ -510,7 +510,7 @@ li.list_desc h4 a:hover{
 }
 /*--main--*/
 .content-top{
-	background: url(../images/sensor_frontal.jpg) no-repeat top center;
+	background: url(../images/prototipo.jpg) no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -626,7 +626,6 @@ li.list_desc h4 a:hover{
 	background-size: cover;
 	background-position: 0% 50%;
 	height: 500px; 
-	color:#fff;
 	padding: 5%;
 }
 p.m_1{
@@ -645,6 +644,12 @@ p.m_2{
 	background-color:#ff8300;
 	padding:8% 0;
 }
+
+.features_blue{
+	background-color:#4169E1;
+	padding:8% 0;
+}
+
 .features{
 	padding:8% 0;
 }

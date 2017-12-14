@@ -61,6 +61,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      </script>
 </head>
 <body>
+<script>
+    $(document).ready(function(){ 
+    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+   }); 
+</script>
 	<div class="header">
 		<div class="container">
 			<div class="row">
@@ -187,26 +192,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	
 
-	<div class="features" id="video">
+	<div class="features_blue" id="video">
 
 		<div class="container video">
 			<h3 class="m_3">Propuesta</h3>
 			<div >
 				<center>
-				<iframe width="750" height="500" allowfullscreen src="https://www.youtube.com/embed/7bYzOi3LNUk?controls=1" class="video"></iframe> 
+				<iframe width="750" height="500" allowfullscreen src="https://www.youtube.com/embed/c3tzxKzB8TY?controls=1" class="video"></iframe> 
 				</center>
 			</div>
 		 </div>
-
-
-
-			<div >
-				<center>
-				<iframe width="750" height="500" allowfullscreen src="https://www.youtube.com/embed/2QLvuoWHano?controls=1" class="video"></iframe> 
-				</center>
-			</div>
-		 </div>
-
 
 	<div class="features_orange" id="staff">
 		<div class="contents staff">
@@ -242,26 +237,65 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <br/>
     </div>
 	</div>
-
+<!--contacto ---------->
 	<div class="contactobikesense" id="contacto">
 		<div class="container">
-			<h3 class="m_3">Contacto</h3>
-      		<div align="right">
-      			<form id="contacto">
-	      			Nombre<br>
-
-	      			<input type="text" name="nombre" onFocus="this.style.color='black'" onBlur="this.style.color='#8FBC8F'">
-	      			<br>Correo<br>
-	      			<input type="text" name="mail" onFocus="this.style.color='black'" onBlur="this.style.color='#8FBC8F'">
-	      			<br>Mensaje<br>
-	      			<textarea name="mensaje" form="contacto" onFocus="this.style.color='black'" onBlur="this.style.color='#8FBC8F'" disabled="true"></textarea> <br>
-	      			<input type="submit" name="enviar" value="Enviar">
-	      		</form>
-      		</div>
-		</div>
+		<h3 class="m_3">Contacto</h3>
+			<form name="contactform" method="post" action="enviar_correo.php"> 
+			<table width="450px"><!---Este tamaño en px es personalizable -->
+			<tr>
+			 <td valign="top">
+			  <label for="first_name">Nombre *</label>
+			 </td>
+			 <td valign="top">
+			  <input  type="text" name="first_name" maxlength="50" size="30" style="color:black">
+			 </td>
+			</tr>
+			<tr>
+			 <td valign="top">
+			  <label for="last_name">Apellido *</label>
+			 </td>
+			 <td valign="top">
+			  <input  type="text" name="last_name" maxlength="50" size="30"  style="color:black">
+			 </td>
+			</tr>
+			<tr>
+			 <td valign="top">
+			  <label for="email">E-mail *</label>
+			 </td>
+			 <td valign="top">
+			  <input  type="text" name="email" maxlength="80" size="30"  style="color:black">
+			 </td>
+			</tr>
+			<tr>
+			 <td valign="top">
+			  <label for="telephone">Teléfono</label>
+			 </td>
+			 <td valign="top">
+			  <input  type="text" name="telephone" maxlength="30" size="30" style="color:black">
+			 </td>
+			</tr>
+			<tr>
+			 <td valign="top">
+			  <label for="message">Mensaje *</label>
+			 </td>
+			 <td valign="top">
+			  <textarea  name="message" maxlength="1000" cols="25" rows="6" style="color:black; width: 264px; resize: none;"></textarea>
+			 </td>
+			</tr>
+			<tr>
+			 <td colspan="2" style="text-align:center">
+			  <input type="submit" value="Enviar" style="color:black"><a href="enviar_correo.php"></a>
+			 </td>
+			</tr>
+			</table>
+</form>
+			</div>
 	</div>
 
 
+
+<!--contacto ---------->
 		<div class="footer">
 			<div class="container">
 				<div class="row">
@@ -273,72 +307,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				
-				<!-- <div class="row">
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Products</h4>
-							<li><a href="#">Mens</a></li>
-							<li><a href="#">Womens</a></li>
-							<li><a href="#">Youth</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>About</h4>
-							<li><a href="#">Careers and internships</a></li>
-							<li><a href="#">Sponserships</a></li>
-							<li><a href="#">team</a></li>
-							<li><a href="#">Catalog Request/Download</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Customer Support</h4>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Shipping and Order Tracking</a></li>
-							<li><a href="#">Easy Returns</a></li>
-							<li><a href="#">Warranty</a></li>
-							<li><a href="#">Replacement Binding Parts</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Newsletter</h4>
-							<div class="footer_search">
-				    		   <form>
-				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-				    			<input type="submit" value="Go">
-				    		   </form>
-					        </div>
-							<ul class="social">	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
-							  <li class="twitter"><a href="#"><span> </span></a></li>
-							  <li class="instagram"><a href="#"><span> </span></a></li>	
-							  <li class="pinterest"><a href="#"><span> </span></a></li>	
-							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
-						    </ul>
-		   					
-						</ul>
-					</div>
-				</div>
-				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		            </div>
-					  <dl id="sample" class="dropdown">
-				        <dt><a href="#"><span>Change Region</span></a></dt>
-				        <dd>
-				            <ul>
-				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
-				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
-				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
-				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
-				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
-				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
-				            </ul>
-				         </dd>
-	   				  </dl> 
-   				</div>-->
 			</div>
 		</div>
 </body>	
